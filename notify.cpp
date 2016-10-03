@@ -74,7 +74,7 @@ int main( int argc, char** argv )
 	a.readFileContents();
 
 	for( int i = 0; i < a.getNumberOfLines(); i++ ) {
-		cout << a.lineAt(i) << endl;
+		cout << i << "\t" << a.lineAt(i) << endl;
 	}
 }
 
