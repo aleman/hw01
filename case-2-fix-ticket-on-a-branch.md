@@ -154,6 +154,12 @@ The branches will show as even when you see all branches
 
   * Increasing need to manage *old* branches, which make the list of branches more crowded, and also make more crowded the graphs
 
+  * The *commit* points are repeated (possibly out of order) across different branches. 
+
+The screenshot below shows both the problem of having too many branches, and commits that are exactly the same but repeated in 3 branches due to the `rebase` strategy (emphasis of red ovals added).
+
+![!case2i](img/case-2-i.png?raw=true)
+
 ### Option 2: integrate the commit via pull-request
 
 
