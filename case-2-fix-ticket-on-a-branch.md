@@ -3,19 +3,19 @@
 ## Anna creates new branch.
 
   * click on button: Branch: master
-	![!case1a](img/case-2-a.png?raw=true)
+	![!case2a](img/case-2-a.png?raw=true)
 
   * type the name of the branch: hotfix-T1104
   * the **blue** selection changes to give option to: Create branch: hotfix-T1104
   * click on that selection
-	![!case1b](img/case-2-b.png?raw=true)
+	![!case2b](img/case-2-b.png?raw=true)
 
   * the page then says "Branch created", it shows you that the current branch you're looking at is "hotfix-T1104", and it indicates that "The branch is even with master"
-  ![!case1c](img/case-2-c.png?raw=true)
+  ![!case2c](img/case-2-c.png?raw=true)
 
   * You can see the "Graph" (selecting Graps, then Network) where branches 'master', and 'hotfix-T1104' are even: they point to the same commit
 
-  ![!case1d](img/case-2-d.png?raw=true)
+  ![!case2d](img/case-2-d.png?raw=true)
 
 ## Anna gets the new branch locally via: `git pull --all`
 
@@ -54,7 +54,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-## Anna marks all files to be part of the repo via: `git add \*`
+## Anna marks all files to be part of the repo via: `git add *`
 
 ## Anna then creates a commit locally, via: `git commit -m "Fixed, config updated and few files added"`
 
@@ -80,7 +80,9 @@ To https://github.com/aleman/hw01.git
 
 The updated graph shows the branch `hotfix-T1104` ahead of the `master` branch
 
-![!case1e](img/case-2-e.png?raw=true)
+![!case2e](img/case-2-e.png?raw=true)
+
+## Integrate the modifications with the `master` branch
 
 ### Option 1: integrate the commit via rebase
 
@@ -136,7 +138,21 @@ To https://github.com/aleman/hw01.git
 
 The updated graph shows the branch `hotfix-T1104` even with the `master` branch
 
-![!case1f](img/case-2-f.png?raw=true)
+![!case2f](img/case-2-f.png?raw=true)
+
+The branches will show as even when you see all branches
+
+![!case2g](img/case-2-g.png?raw=true)
+
+**Disadvantages**
+
+  * When more changes (*commits*) happen in the `master` branch, the branch `hotfix-T1104` will be behind, as indicated by the number of commits behind the `master` branch
+
+![!case2g](img/case-2-g.png?raw=true)
+
+  * It is not clear to other people in the team whether that branch can be **deleted**
+
+  * Increasing need to manage *old* branches, which make the list of branches more crowded, and also make more crowded the graphs
 
 ### Option 2: integrate the commit via pull-request
 
