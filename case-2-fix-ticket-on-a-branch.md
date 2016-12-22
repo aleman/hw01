@@ -156,6 +156,8 @@ The branches will show as even when you see all branches
 
   * The *commit* points are repeated (possibly out of order) across different branches. 
 
+  * In the example of Anna's fix, there was only 1 commit, which shows as 1 commit point on the `master` branch. If Anna had done several intermediate commit points, they will all show up on the `master` branch. The **log** of the `master` branch may end up too crowded with not too important messages of intermediate commits. 
+
 The screenshot below shows both the problem of having too many branches, and commits that are exactly the same but repeated in 3 branches due to the `rebase` strategy (emphasis of red ovals added).
 
 ![!case2i](img/case-2-i.png?raw=true)
