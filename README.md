@@ -1,8 +1,8 @@
-# hw01
+# GitHub Examples
 
 <!-- [![Build Status](https://travis-ci.org/aleman/hw01.svg?branch=master)](https://travis-ci.org/aleman/hw01) -->
 
-Base case: 1 person makes changes on the default branch: master.
+## Base case: 1 person makes changes on the default branch: master.
 ![image](img/case-1.png?raw=true)
 
 ## Anna: please fix the ticket on a new branch
@@ -18,23 +18,28 @@ Anna creates new branch.
 	![!case1b](img/case-2-b.png?raw=true)
 
   * the page then says "Branch created", it shows you that the current branch you're looking at is "hotfix-T1104", and it indicates that "The branch is even with master"
-	![!case1c](img/case-2-c.png?raw=true)
+  ![!case1c](img/case-2-c.png?raw=true)
 
   * You can see the "Graph" (selecting Graps, then Network) where branches 'master', and 'hotfix-T1104' are even: they point to the same commit
-	![!case1c](img/case-2-c.png?raw=true)
+
+  ![!case1d](img/case-2-d.png?raw=true)
 
 Anna gets the new branch locally via: `git pull --all`
 
 The output looks like: 
-```Fetching origin
-From https://github.com/aleman/hw01
- * [new branch]      hotfix-T1104 -> origin/hotfix-T1104
- Already up-to-date.```
+
+```
+   Fetching origin
+     From https://github.com/aleman/hw01
+     * [new branch]      hotfix-T1104 -> origin/hotfix-T1104
+     Already up-to-date.
+```
 
 Anna switches to the newly created branch via: `git checkout hotfix-T1104`
 
 After editing/changing things, the files that changed can be listed via: `git status`
 The output would list files in the following manner (example)
+
 ```On branch hotfix-T1104
 Your branch is up-to-date with 'origin/hotfix-T1104'.
 Changes not staged for commit:
@@ -51,13 +56,17 @@ Changes not staged for commit:
     	  	src/authenticate.php
     	  	src/signoff.php
 
-no changes added to commit (use "git add" and/or "git commit -a")```
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 Anna marks all files to be part of the repo via: `git add \*`
 
 Anna then creates a commit locally, via: `git commit -m "Fixed, config updated and few files added"`
 
 The commit point is created but one more step is needed to copy it to GitHub: `git push origin hotfix-T1104`
+
+The updated graph shows the branch `hotfix-T1104` ahead of the `master` branch
+
 
 ### Option 1: integrate the commit via rebase
 
