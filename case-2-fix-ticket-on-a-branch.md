@@ -1,13 +1,6 @@
-# GitHub Examples
+# Case 2: Anna: please fix the ticket on a new branch
 
-<!-- [![Build Status](https://travis-ci.org/aleman/hw01.svg?branch=master)](https://travis-ci.org/aleman/hw01) -->
-
-## Base case: 1 person makes changes on the default branch: master.
-![image](img/case-1.png?raw=true)
-
-## Anna: please fix the ticket on a new branch
-
-Anna creates new branch.
+## Anna creates new branch.
 
   * click on button: Branch: master
 	![!case1a](img/case-2-a.png?raw=true)
@@ -24,7 +17,7 @@ Anna creates new branch.
 
   ![!case1d](img/case-2-d.png?raw=true)
 
-Anna gets the new branch locally via: `git pull --all`
+## Anna gets the new branch locally via: `git pull --all`
 
 The output looks like: 
 
@@ -35,7 +28,7 @@ The output looks like:
      Already up-to-date.
 ```
 
-Anna switches to the newly created branch via: `git checkout hotfix-T1104`
+## Anna switches to the newly created branch via: `git checkout hotfix-T1104`
 
 After editing/changing things, the files that changed can be listed via: `git status`
 
@@ -61,9 +54,9 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Anna marks all files to be part of the repo via: `git add \*`
+## Anna marks all files to be part of the repo via: `git add \*`
 
-Anna then creates a commit locally, via: `git commit -m "Fixed, config updated and few files added"`
+## Anna then creates a commit locally, via: `git commit -m "Fixed, config updated and few files added"`
 
 The output will look similar to:
 ```
