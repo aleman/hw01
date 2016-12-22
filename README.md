@@ -5,7 +5,7 @@
 ## Base case: 1 person makes changes on the default branch: master.
 ![image](img/case-1.png?raw=true)
 
-## Case 2: [Anna: please fix the ticket on a new branch](blob/mater/case-2-fix-ticket-on-a-branch.md)
+## Case 2: [Anna: please fix the ticket on a new branch](case-2-fix-ticket-on-a-branch.md)
 
 Anna creates new branch.
 
