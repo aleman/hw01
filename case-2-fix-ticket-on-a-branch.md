@@ -166,3 +166,22 @@ The screenshot below shows both the problem of having too many branches, and com
 
 Anna's branch hotfix-T1104 is up to date locally.
 
+
+On the website, go to branches, then click **New pull request**
+
+![!case1j](img/case-2-j.png?raw=true)
+
+The *base* branch will be the main branch (such as `master`), and the head branch will be the one with the changes, `hotfix-T1104` in this case.
+
+In most cases, GitHub will be able to merge branches automatically.
+
+Upon clicking on Create Pull Request, from the point of view of the requestor, you are done.
+
+The person that creates the Pull Request is asking some one else to complete the task of integrating the changes of the hotfix into the main code.
+
+The GitHub page will then show that there is a pull request (often an email is sent as well).
+
+Assume that Jane is the person that receives pull requests (to be integrated into the `master` branch).
+
+Jane will view the pull request, with the title listed as the message of the commit, in this case: "Fixed, config updated and few files added".
+
