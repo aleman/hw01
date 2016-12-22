@@ -164,4 +164,5 @@ The screenshot below shows both the problem of having too many branches, and com
 
 ### Option 2: integrate the commit via pull-request
 
+Anna's branch hotfix-T1104 is up to date locally.
 
