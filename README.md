@@ -87,6 +87,7 @@ To https://github.com/aleman/hw01.git
 
 The updated graph shows the branch `hotfix-T1104` ahead of the `master` branch
 
+![!case1e](img/case-2-e.png?raw=true)
 
 ### Option 1: integrate the commit via rebase
 
@@ -139,6 +140,10 @@ Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/aleman/hw01.git
    0f20e32..73c7dc4  master -> master
 ```
+
+The updated graph shows the branch `hotfix-T1104` even with the `master` branch
+
+![!case1f](img/case-2-f.png?raw=true)
 
 ### Option 2: integrate the commit via pull-request
 
