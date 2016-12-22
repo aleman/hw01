@@ -148,7 +148,7 @@ The branches will show as even when you see all branches
 
   * When more changes (*commits*) happen in the `master` branch, the branch `hotfix-T1104` will be behind, as indicated by the number of commits behind the `master` branch
 
-![!case2g](img/case-2-g.png?raw=true)
+![!case2h](img/case-2-h.png?raw=true)
 
   * It is not clear to other people in the team whether that branch can be **deleted**
 
